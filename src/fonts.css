@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'inter100';
+    src: url(/public/fonts/Inter-Thin.ttf);
+}
+@font-face {
+    font-family: 'inter200';
+    src: url(/public/fonts/Inter-ExtraLight.ttf);
+}
+@font-face {
+    font-family: 'inter300';
+    src: url(/public/fonts/Inter-Light.ttf);
+}
+@font-face {
+    font-family: 'inter500';
+    src: url(/public/fonts/Inter-Medium.ttf);
+}
+@font-face {
+    font-family: 'inter600';
+    src: url(/public/fonts/Inter-SemiBold.ttf);
+}
+@font-face {
+    font-family: 'inter800';
+    src: url(/public/fonts/Inter-ExtraBold.ttf);
+}
+@font-face {
+    font-family: 'inter900';
+    src: url(/public/fonts/Inter-Black.ttf);
+}
