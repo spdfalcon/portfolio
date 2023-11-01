@@ -1,6 +1,6 @@
 import React from "react";
 import logoipsum from "../../assets/logoipsum.svg";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 export default function Header() {
   return (
     <>
@@ -21,9 +21,9 @@ export default function Header() {
             <input placeholder="Search" className="p-2 bg-gradient-headerB2 outline-none" type="text" />
           </div>
           <div className="right text-sm font-inter500 text-gray-text2">
-            <Link className="px-[14px] py-3" to={'/work'}>💼 Work</Link>
-            <Link className="px-[14px] py-3" to={'/about-me'}>😀 About Me</Link>
-            <Link className="px-[14px] py-3 bg-black-me text-white-me rounded-[10px]" to={'/'}>🤙 Contact Us</Link>
+            <NavLink className={({isActive})=>isActive?' bg-black-me text-white-me rounded-[10px] px-[14px] py-3' : 'px-[14px] py-3'} to={'/work'}>💼 Work</NavLink>
+            <NavLink className={({isActive})=>isActive?' bg-black-me text-white-me rounded-[10px] px-[14px] py-3' : 'px-[14px] py-3'} to={'/about-me'}>😀 About Me</NavLink>
+            <NavLink className={({isActive})=>isActive?' bg-black-me text-white-me rounded-[10px] px-[14px] py-3' : 'px-[14px] py-3'} to={'/'}>🤙 Contact Us</NavLink>
           </div>
         </div>
       </div>
