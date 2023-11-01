@@ -1,9 +1,10 @@
 import React from 'react'
+import StartHeader from '../../components/startHeader/StartHeader'
 
 export default function Home() {
   return (
     <div>
-      Home
+      <StartHeader></StartHeader>
     </div>
   )
 }

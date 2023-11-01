@@ -1,5 +1,6 @@
 import React from "react";
 import logoipsum from "../../assets/logoipsum.svg";
+import { Link } from "react-router-dom";
 export default function Header() {
   return (
     <>
@@ -11,11 +12,19 @@ export default function Header() {
           <i class="bi bi-whatsapp"></i>
           <a className="font-inter600" href="#">+91 84695 47012</a>
         </div>
-        <div className="down container">
+        <div className="down container flex items-center justify-between py-5">
           <div className="left">
             <img src={logoipsum} />
           </div>
-          <h2 className="">header</h2>
+          <div className="input flex items-center bg-gradient-headerB2 px-3 rounded-xl ">
+            <i className="bi bi-search"></i>
+            <input placeholder="Search" className="p-2 bg-gradient-headerB2" type="text" />
+          </div>
+          <div className="right text-sm font-inter500 text-gray-text2">
+            <Link className="px-[14px] py-3" to={'/work'}>💼 Work</Link>
+            <Link className="px-[14px] py-3" to={'/about-me'}>😀 About Me</Link>
+            <Link className="px-[14px] py-3 bg-black-me text-white-me rounded-[10px]" to={'/'}>🤙 Contact Us</Link>
+          </div>
         </div>
       </div>
     </>

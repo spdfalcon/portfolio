@@ -7,9 +7,11 @@ function App() {
   const router = useRoutes(routes);
   return (
     <>
-    <Header></Header>
-      {router}
-      <Footer></Footer>
+      <div className="font-inter500">
+        <Header></Header>
+        {router}
+        <Footer></Footer>
+      </div>
     </>
   );
 }
