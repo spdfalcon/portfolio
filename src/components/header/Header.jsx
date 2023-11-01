@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function Header() {
   return (
     <>
-      <div className="">
+      <div className="hidden lg:block">
         <div className="top flex justify-center gap-2 text-sm py-3 bg-gradient-to-r from-gradient-headerA1 via-gradient-headerA2 to-gradient-headerA3">
           <p className="text-gray-text1  font-inter500">
             Get Quick response via contact us on WhatsApp
@@ -18,7 +18,7 @@ export default function Header() {
           </div>
           <div className="input flex items-center bg-gradient-headerB2 px-3 rounded-xl ">
             <i className="bi bi-search"></i>
-            <input placeholder="Search" className="p-2 bg-gradient-headerB2" type="text" />
+            <input placeholder="Search" className="p-2 bg-gradient-headerB2 outline-none" type="text" />
           </div>
           <div className="right text-sm font-inter500 text-gray-text2">
             <Link className="px-[14px] py-3" to={'/work'}>💼 Work</Link>
