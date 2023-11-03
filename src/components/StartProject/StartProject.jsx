@@ -3,7 +3,7 @@ import React from "react";
 export default function StartProject() {
   return (
     <div>
-      <div className="flex flex-col justify-center items-center text-center ">
+      <div className="flex flex-col justify-center items-center text-center mt-20">
         <h2 className="text-6xl w-[716px] font-inter800">
           Have a project in mind? Let’s get to work.
         </h2>
