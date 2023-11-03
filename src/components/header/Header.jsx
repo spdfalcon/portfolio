@@ -9,7 +9,7 @@ export default function Header() {
           <p className="text-gray-text1  font-inter500">
             Get Quick response via contact us on WhatsApp
           </p>
-          <i class="bi bi-whatsapp"></i>
+          <i className="bi bi-whatsapp"></i>
           <a className="font-inter600" href="#">
             +91 84695 47012
           </a>
