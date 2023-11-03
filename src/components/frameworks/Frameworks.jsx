@@ -1,5 +1,5 @@
 import React from 'react'
-import Framework from '../framework/framework'
+import Framework from '../Framework/Framework'
 
 export default function Frameworks() {
   return (
