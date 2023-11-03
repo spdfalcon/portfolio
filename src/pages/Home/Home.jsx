@@ -2,7 +2,7 @@ import React from 'react'
 import StartHeader from '../../components/startHeader/StartHeader'
 import Projects from '../../components/Projects/Projects'
 import ViewAllProjects from '../../components/viewAllProjects/ViewAllProjects'
-import Frameworks from '../../components/frameworks/frameworks'
+import Frameworks from '../../components/Frameworks/Frameworks'
 import TeamPic from '../../components/TeamPic/TeamPic'
 import StartProject from '../../components/StartProject/StartProject'
 
