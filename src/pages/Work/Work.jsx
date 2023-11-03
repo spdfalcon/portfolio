@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import WorkHeader from "../../components/WorkHeader/WorkHeader";
 
 export default function Work() {
   return (
-    <div>
-      work
-    </div>
-  )
+    <>
+      <div>
+        <WorkHeader></WorkHeader>
+      </div>
+    </>
+  );
 }

@@ -48,6 +48,9 @@ export default {
         'gradient-boxC2': '#F3EFF6',
         'gradient-boxC3': '#EEE0F9',
 
+        'work-text' : '#34113F',
+        'work-text-gray' : '#475467'
+        
       },
       fontFamily: {
         'inter100': 'inter100',

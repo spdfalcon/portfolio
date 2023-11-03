@@ -29,7 +29,7 @@ export default function Footer() {
               kiritgoti007@gmailcom
             </a>
             <a
-              className="text-sm font-inter500 text-white-me mt-2 block"
+              className="text-sm font-inter500 text-white-me mt-4 block"
               href="#"
             >
               +91 84695 47012
