@@ -1,73 +1,29 @@
-import React from "react";
+import React, { useEffect } from "react";
 import WorkProject from "../WorkProject/WorkProject";
+import { useDispatch, useSelector } from "react-redux";
+import { getPortfolios } from "../../Redux/store/portfolio";
 
 export default function WorkProjects() {
+  const portfolios = useSelector(store=>store.portfolios)
+  const dispatch = useDispatch()
+  useEffect(()=>{
+    dispatch(getPortfolios())
+  },[])
   return (
     <div className="container mt-44 flex justify-between flex-wrap gap-y-20">
-      <WorkProject
-        img={"./img/work-project/1.png"}
-        title={"Specialty Restaurant Group"}
-        desc={"Enriched ImmigrationProcess"}
-        type1={"UX-UI"}
-        type2={"Web"}
-        type3={"Mobile"}
-      ></WorkProject>
-      <WorkProject
-        img={"./img/work-project/2.png"}
-        title={"Specialty Restaurant Group"}
-        desc={"Enriched ImmigrationProcess"}
-        type1={"UX-UI"}
-        type2={"Web"}
-        type3={"Mobile"}
-      ></WorkProject>
-      <WorkProject
-        img={"./img/work-project/3.png"}
-        title={"J. Brannam"}
-        desc={"Enriched ImmigrationProcess"}
-        type1={"UX-UI"}
-        type2={"Web"}
-        type3={"Mobile"}
-      ></WorkProject>
-      <WorkProject
-        img={"./img/work-project/4.png"}
-        title={"Tam's Stationers"}
-        desc={"Enriched ImmigrationProcess"}
-        type1={"UX-UI"}
-        type2={"Web"}
-        type3={"Mobile"}
-      ></WorkProject>
-      <WorkProject
-        img={"./img/work-project/5.png"}
-        title={"Western Auto"}
-        desc={"Enriched ImmigrationProcess"}
-        type1={"UX-UI"}
-        type2={"Web"}
-        type3={"Mobile"}
-      ></WorkProject>
-      <WorkProject
-        img={"./img/work-project/6.png"}
-        title={"Pacific Stereo"}
-        desc={"Enriched ImmigrationProcess"}
-        type1={"UX-UI"}
-        type2={"Web"}
-        type3={"Mobile"}
-      ></WorkProject>
-      <WorkProject
-        img={"./img/work-project/7.png"}
-        title={"Magna Architectural Design"}
-        desc={"Enriched ImmigrationProcess"}
-        type1={"UX-UI"}
-        type2={"Web"}
-        type3={"Mobile"}
-      ></WorkProject>
-      <WorkProject
-        img={"./img/work-project/8.png"}
-        title={"Cut Rite Lawn Care"}
-        desc={"Enriched ImmigrationProcess"}
-        type1={"UX-UI"}
-        type2={"Web"}
-        type3={"Mobile"}
-      ></WorkProject>
+      {
+        portfolios.map(item=>(
+          <WorkProject
+            key={item.id}
+            img={item.img}
+            title={item.title}
+            desc={item.desc}
+            type1={item.type1}
+            type2={item.type2}
+            type3={item.type3}
+          ></WorkProject>
+        ))
+      }
     </div>
   );
 }

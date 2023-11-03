@@ -10,13 +10,13 @@ export default function Fworks() {
         <h4 className='text-lg text-gray-text2 mt-3'>Work with many big brands, brings for me great experience. </h4>
       </div>
       <div className='flex justify-between mt-16 flex-wrap  gap-5'>
-      <Fwork bg={'bg-figma-bg'} img={'./img/frameworks/figma.png'} title={'Figma'}></Fwork>
-      <Fwork bg={'bg-adobe-bg'} img={'./img/frameworks/xd.png'} title={'Adobe XD'}></Fwork>
-      <Fwork bg={'bg-illustrator-bg'} img={'./img/frameworks/illustrator.png'} title={'Illustrator'}></Fwork>
-      <Fwork bg={'bg-photoshop-bg'} img={'./img/frameworks/photoshop.png'} title={'Photoshop'}></Fwork>
-      <Fwork bg={'bg-notion-bg'} img={'./img/frameworks/vector.png'} title={'Notion'}></Fwork>
-      <Fwork bg={'bg-asana-bg'} img={'./img/frameworks/asana.png'} title={'Asana'}></Fwork>
-      <Fwork bg={'bg-marvel-bg'} img={'./img/frameworks/marvel.png'} title={'Marvel'}></Fwork>
+      <Fwork id={1} bg={'bg-figma-bg'} img={'./img/frameworks/figma.png'} title={'Figma'}></Fwork>
+      <Fwork id={2} bg={'bg-adobe-bg'} img={'./img/frameworks/xd.png'} title={'Adobe XD'}></Fwork>
+      <Fwork id={3} bg={'bg-illustrator-bg'} img={'./img/frameworks/illustrator.png'} title={'Illustrator'}></Fwork>
+      <Fwork id={4} bg={'bg-photoshop-bg'} img={'./img/frameworks/photoshop.png'} title={'Photoshop'}></Fwork>
+      <Fwork id={5} bg={'bg-notion-bg'} img={'./img/frameworks/vector.png'} title={'Notion'}></Fwork>
+      <Fwork id={6} bg={'bg-asana-bg'} img={'./img/frameworks/asana.png'} title={'Asana'}></Fwork>
+      <Fwork id={7} bg={'bg-marvel-bg'} img={'./img/frameworks/marvel.png'} title={'Marvel'}></Fwork>
       </div>
     </div>
   )
