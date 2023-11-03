@@ -4,8 +4,7 @@ import Projects from '../../components/Projects/Projects'
 import ViewAllProjects from '../../components/viewAllProjects/ViewAllProjects'
 import TeamPic from '../../components/TeamPic/TeamPic'
 import StartProject from '../../components/StartProject/StartProject'
-import Frameworks from '../../components/frameworks/frameworks'
-
+import Fworks from '../../components/Fworks/Fworks'
 export default function Home() {
   return (
     <div className=''>
@@ -13,7 +12,7 @@ export default function Home() {
       <div className='container'>
       <Projects></Projects>
       <ViewAllProjects></ViewAllProjects>
-      <Frameworks></Frameworks>
+      <Fworks></Fworks>
       </div>
       <TeamPic></TeamPic>
       <div className='container'>
