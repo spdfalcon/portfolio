@@ -5,7 +5,7 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 export const getPortfolios = createAsyncThunk(
     'portfolios/getPortfolios' ,
      async ()=>{
-        return fetch('http://localhost:3000/Portfolio')
+        return fetch('https://json-server-vercel-neon-seven.vercel.app/Portfolio')
         .then(res=>res.json())
         .then(data=>data)
      } )
