@@ -73,26 +73,76 @@
       "type3": "Mobile"
     }
   ],
-  "menu":[
+  "menu": [
     {
-      "id":1,
-      "text":"🏠 Home",
-      "to":"/"
+      "id": 1,
+      "text": "🏠 Home",
+      "to": "/"
     },
     {
-      "id":2,
-      "text":"💼 Work",
-      "to":"/work"
+      "id": 2,
+      "text": "💼 Work",
+      "to": "/work"
     },
     {
-      "id":3,
-      "text":"😀 About Me",
-      "to":"/about-me"
+      "id": 3,
+      "text": "😀 About Me",
+      "to": "/about-me"
     },
     {
-      "id":4,
-      "text":"🤙 Contact Us",
-      "to":"/contact-us"
+      "id": 4,
+      "text": "🤙 Contact Us",
+      "to": "/contact-us"
+    }
+  ],
+  "project": [
+    {
+      "id": 1,
+      "img": "./img/projects/project1.png",
+      "date": "May -July 2017",
+      "title": "Grids & Alignment",
+      "type": "Mobile, UX, Vivid, Concept",
+      "desc": "Expedita laborum suscipit sequi et nobis voluptas fuga placeat. Omnis est ratione. Repellendus recusandae a."
+    },
+    {
+      "id": 2,
+      "img": "./img/projects/project2.png",
+      "date": "May -July 2017",
+      "title": "Grids & Alignment",
+      "type": "Mobile, UX, Vivid, Concept",
+      "desc": "Expedita laborum suscipit sequi et nobis voluptas fuga placeat. Omnis est ratione. Repellendus recusandae a."
+    },
+    {
+      "id": 3,
+      "img": "./img/projects/project3.png",
+      "date": "May -July 2017",
+      "title": "Grids & Alignment",
+      "type": "Mobile, UX, Vivid, Concept",
+      "desc": "Expedita laborum suscipit sequi et nobis voluptas fuga placeat. Omnis est ratione. Repellendus recusandae a."
+    },
+    {
+      "id": 4,
+      "img": "./img/projects/project4.png",
+      "date": "May -July 2017",
+      "title": "Grids & Alignment",
+      "type": "Mobile, UX, Vivid, Concept",
+      "desc": "Expedita laborum suscipit sequi et nobis voluptas fuga placeat. Omnis est ratione. Repellendus recusandae a."
+    },
+    {
+      "id": 5,
+      "img": "./img/projects/project5.png",
+      "date": "May -July 2017",
+      "title": "Grids & Alignment",
+      "type": "Mobile, UX, Vivid, Concept",
+      "desc": "Expedita laborum suscipit sequi et nobis voluptas fuga placeat. Omnis est ratione. Repellendus recusandae a."
+    },
+    {
+      "id": 6,
+      "img": "./img/projects/project6.png",
+      "date": "May -July 2017",
+      "title": "Grids & Alignment",
+      "type": "Mobile, UX, Vivid, Concept",
+      "desc": "Expedita laborum suscipit sequi et nobis voluptas fuga placeat. Omnis est ratione. Repellendus recusandae a."
     }
   ]
 }
