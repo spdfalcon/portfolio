@@ -2,6 +2,7 @@ import { useRoutes } from "react-router-dom";
 import routes from "./routes/routes";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
+import { useEffect, useState } from "react";
 
 function App() {
   const router = useRoutes(routes);
