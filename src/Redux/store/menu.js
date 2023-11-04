@@ -3,7 +3,7 @@ import { createSlice , createAsyncThunk } from "@reduxjs/toolkit";
 export const getMenuFromServer = createAsyncThunk(
     'menu/getMenuFromServer',
     async ()=>{
-        return fetch('https://json-server-vercel-neon-seven.vercel.app/menu')
+        return fetch('https://portfolio-json-server-vercel.vercel.app/menu')
         .then(res=>res.json())
         .then(data=>data)
     }
