@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import logoipsum from "../../assets/logoipsum.svg";
 import { Link, NavLink } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { getMenuFromServer } from "../../Redux/store/menu";
 export default function Header() {
+  const dispatch = useDispatch()
+  const menus = useSelector(store=>store.menu)
+  useEffect(()=>{
+    dispatch(getMenuFromServer())
+  },[])
   return (
     <>
       <div className="hidden lg:block">
@@ -27,36 +34,21 @@ export default function Header() {
             </div>
           </div>
           <div className="right text-sm font-inter500 text-gray-text2">
+            {
+              menus.map(item=>(
             <NavLink
+                key={item.id}
               className={({ isActive }) =>
                 isActive
                   ? " bg-black-me text-white-me rounded-[10px] px-[14px] py-3"
                   : "px-[14px] py-3"
               }
-              to={"/work"}
+              to={item.to}
             >
-              💼 Work
+              {item.text}
             </NavLink>
-            <NavLink
-              className={({ isActive }) =>
-                isActive
-                  ? " bg-black-me text-white-me rounded-[10px] px-[14px] py-3"
-                  : "px-[14px] py-3"
-              }
-              to={"/about-me"}
-            >
-              😀 About Me
-            </NavLink>
-            <NavLink
-              className={({ isActive }) =>
-                isActive
-                  ? " bg-black-me text-white-me rounded-[10px] px-[14px] py-3"
-                  : "px-[14px] py-3"
-              }
-              to={"/"}
-            >
-              🤙 Contact Us
-            </NavLink>
+              ))
+            }
           </div>
         </div>
       </div>

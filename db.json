@@ -72,5 +72,27 @@
       "type2": "Web",
       "type3": "Mobile"
     }
+  ],
+  "menu":[
+    {
+      "id":1,
+      "text":"🏠 Home",
+      "to":"/"
+    },
+    {
+      "id":2,
+      "text":"💼 Work",
+      "to":"/work"
+    },
+    {
+      "id":3,
+      "text":"😀 About Me",
+      "to":"/about-me"
+    },
+    {
+      "id":4,
+      "text":"🤙 Contact Us",
+      "to":"/contact-us"
+    }
   ]
 }
