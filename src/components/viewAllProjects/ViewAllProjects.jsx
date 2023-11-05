@@ -8,12 +8,12 @@ export default function ViewAllProjects() {
         <div className="title text-center w-full py-5 border-b-2 border-black-me">
           <h2 className="text-xl">View All Projects</h2>
         </div>
-        <div className="all flex flex-col lg:flex-row py-28">
+        <div className="all flex flex-col items-center gap-5 lg:flex-row py-28">
           <div className="left relative basis-1/2">
-            <div>
+            <div className="hidden lg:block">
               <img src="./img/uiux/uiux.png" alt="" />
             </div>
-            <div className="absolute w-80 h-48 top-72 left-32 bg-black-me p-4 text-white-me">
+            <div className="lg:absolute w-80 h-48 top-72 left-32 bg-black-me p-4 text-white-me">
               <span className="text-[13px]">01</span>
               <h3 className="text-2xl font-inter600">UI/UX Design</h3>
               <p className="text-sm mt-4">
@@ -42,11 +42,11 @@ export default function ViewAllProjects() {
         </div>
         <div className="numbers py-12 flex justify-between items-center">
             <CounterHome title={'Project'} count={98}></CounterHome>
-            <span className="w-px h-16 bg-[#dee2d2]"></span>
+            <span className="w-px h-10 lg:h-16 bg-[#dee2d2]"></span>
             <CounterHome title={'People'} count={65}></CounterHome>
-            <span className="w-px h-16 bg-[#dee2d2]"></span>
+            <span className="w-px h-10 lg:h-16 bg-[#dee2d2]"></span>
             <CounterHome title={'Years'} count={10}></CounterHome>
-            <span className="w-px h-16 bg-[#dee2d2]"></span>
+            <span className="w-px h-10 lg:h-16 bg-[#dee2d2]"></span>
             <CounterHome title={'Offices'} count={15}></CounterHome>
         </div>
       </div>

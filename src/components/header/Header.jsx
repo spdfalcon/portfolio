@@ -14,7 +14,7 @@ export default function Header() {
   return (
     <>
       <div className="relative">
-        <div className="top flex justify-center gap-2 text-sm py-3 bg-gradient-to-r from-gradient-headerA1 via-gradient-headerA2 to-gradient-headerA3">
+        <div className="top flex justify-center gap-2 text-[8px] md:text-sm py-3 bg-gradient-to-r from-gradient-headerA1 via-gradient-headerA2 to-gradient-headerA3">
           <p className="text-gray-text1  font-inter500">
             Get Quick response via contact us on WhatsApp
           </p>
@@ -25,7 +25,7 @@ export default function Header() {
         </div>
         <div className="down px-5 container flex items-center justify-between py-5">
           <div className="left flex gap-10">
-            <img src={logoipsum} />
+            <img className="w-24 sm:w-auto" src={logoipsum} />
             <div className="input hidden lg:flex items-center bg-gradient-headerB2 px-3 rounded-xl ">
               <i className="bi bi-search"></i>
               <input
@@ -75,7 +75,7 @@ export default function Header() {
         </div>
         <div onClick={()=>setIsShow(priv=>!priv)} className={`fixed duration-300 w-full z-10 h-screen bg-gradient-headerA3/40 top-0 ring-0 ${isShow ? '' : 'opacity-0 scale-0'} lg:opacity-0 lg:scale-0`}></div>
         <div className={`fixed top-0 right-0 duration-300 bg-gradient-headerA3 w-1/2 h-screen z-20 p-5 ${isShow ? '' : 'translate-x-full'} lg:translate-x-full`}>
-          <div className="right flex flex-col gap-4 text-right text-sm font-inter500 text-gray-text2">
+          <div className="right flex flex-col gap-4 text-right text-xs sm:text-sm font-inter500 text-gray-text2">
           <div className="flex">
             <div
               onClick={() => setIsShow((priv) => !priv)}

@@ -6,10 +6,10 @@ export default function Fworks() {
   return (
     <div className='py-12'>
       <div>
-        <h2 className='text-4xl font-inter600'>Tools i use in my daily life as UI/UX Designer 🌤 </h2>
-        <h4 className='text-lg text-gray-text2 mt-3'>Work with many big brands, brings for me great experience. </h4>
+        <h2 className='text-2xl lg:text-4xl font-inter600'>Tools i use in my daily life as UI/UX Designer 🌤 </h2>
+        <h4 className='text-sm lg:text-lg text-gray-text2 mt-3'>Work with many big brands, brings for me great experience. </h4>
       </div>
-      <div className='flex justify-between mt-16 flex-wrap  gap-5'>
+      <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7 mt-16  gap-3'>
       <Fwork id={1} bg={'bg-figma-bg'} img={'./img/frameworks/figma.png'} title={'Figma'}></Fwork>
       <Fwork id={2} bg={'bg-adobe-bg'} img={'./img/frameworks/xd.png'} title={'Adobe XD'}></Fwork>
       <Fwork id={3} bg={'bg-illustrator-bg'} img={'./img/frameworks/illustrator.png'} title={'Illustrator'}></Fwork>

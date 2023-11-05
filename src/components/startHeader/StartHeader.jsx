@@ -5,8 +5,8 @@ export default function StartHeader() {
     <div>
       <div className="p-5 text-center lg:text-left lg:px-[150px] lg:py-20 bg-gradient-to-r from-gradient-headerB1 from-10% via-gradient-headerB2 via-80% to-gradient-headerB3 to-90% flex flex-col lg:flex-row items-center justify-center">
         <div className="left lg:p-16 basis-1/2">
-          <div className="w-[500px]">
-            <h1 className="font-inter800 text-2xl lg:text-4xl">
+          <div className="lg:w-[500px]">
+            <h1 className="font-inter800 lg:text-4xl">
               Welcome to my new Creative World!
             </h1>
             <p className="font-inter500 mt-3 text-sm lg:text-xl">
