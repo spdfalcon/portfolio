@@ -11,7 +11,7 @@ export default function ViewAllProjects() {
         <div className="all flex flex-col items-center gap-5 lg:flex-row py-28">
           <div className="left relative basis-1/2">
             <div className="hidden lg:block">
-              <img src="./img/uiux/uiux.png" alt="" />
+              <img src="/img/uiux/uiux.png" alt="" />
             </div>
             <div className="lg:absolute w-80 h-48 top-72 left-32 bg-black-me p-4 text-white-me">
               <span className="text-[13px]">01</span>

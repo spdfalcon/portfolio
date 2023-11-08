@@ -50,7 +50,7 @@ export default function Header() {
               </NavLink>
             ))}
           </div>
-          <div className="flex lg:hidden">
+          <div className="flex lg:hidden cursor-pointer">
             <div
               onClick={() => setIsShow((priv) => !priv)}
               className="flex flex-col gap-[5px]"
@@ -73,13 +73,13 @@ export default function Header() {
             </div>
           </div>
         </div>
-        <div onClick={()=>setIsShow(priv=>!priv)} className={`fixed duration-300 w-full z-10 h-screen bg-gradient-headerA3/40 top-0 ring-0 ${isShow ? '' : 'opacity-0 scale-0'} lg:opacity-0 lg:scale-0`}></div>
-        <div className={`fixed top-0 right-0 duration-300 bg-gradient-headerA3 w-1/2 h-screen z-20 p-5 ${isShow ? '' : 'translate-x-full'} lg:translate-x-full`}>
+        <div onClick={()=>setIsShow(priv=>!priv)} className={`fixed duration-300 w-full z-10 h-screen bg-gray-400/30 backdrop-blur-md top-0 ring-0 ${isShow ? '' : 'opacity-0 scale-0'} lg:opacity-0 lg:scale-0`}></div>
+        <div className={`fixed top-0 right-0 duration-300 bg-white-me/60 shadow-xl w-1/2 h-screen z-20 p-5 ${isShow ? '' : 'translate-x-full'} lg:translate-x-full`}>
           <div className="right flex flex-col gap-4 text-right text-xs sm:text-sm font-inter500 text-gray-text2">
-          <div className="flex">
+          <div className="flex ">
             <div
               onClick={() => setIsShow((priv) => !priv)}
-              className="flex flex-col gap-[5px]"
+              className="flex flex-col gap-[5px] cursor-pointer"
             >
               <span
                 className={`w-6 h-[3px] duration-300 rounded-sm bg-slate-400 ${
@@ -100,6 +100,7 @@ export default function Header() {
           </div>
             {menus.map((item) => (
               <NavLink
+                onClick={(e)=>setIsShow(false)}
                 key={item.id}
                 className={({ isActive }) =>
                   isActive

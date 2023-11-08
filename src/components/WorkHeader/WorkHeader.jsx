@@ -24,15 +24,15 @@ export default function WorkHeader() {
         </div>
         <div className="down relative">
           <div className="flex justify-between z-20">
-          <img src="./img/work-menu/1.png" alt="" />
-          <img className="-translate-y-10" src="./img/work-menu/2.png" alt="" />
-          <img className="translate-y-5" src="./img/work-menu/3.png" alt="" />
-          <img className="translate-y-10" src="./img/work-menu/4.png" alt="" />
+          <img src="/img/work-menu/1.png" alt="" />
+          <img className="-translate-y-10" src="/img/work-menu/2.png" alt="" />
+          <img className="translate-y-5" src="/img/work-menu/3.png" alt="" />
+          <img className="translate-y-10" src="/img/work-menu/4.png" alt="" />
           </div>
-          <img className="absolute -bottom-16 left-1/2 -translate-x-1/2 -z-10" src="./img/work-menu/shap.png" alt="" />
-          <img className="absolute -top-10 right-96" src="./img/work-menu/star1.png" alt="" />
-          <img className="absolute top-0 right-72" src="./img/work-menu/star1.png" alt="" />
-          <img className="absolute -top-10 right-52" src="./img/work-menu/star2.png" alt="" />
+          <img className="absolute -bottom-16 left-1/2 -translate-x-1/2 -z-10" src="/img/work-menu/shap.png" alt="" />
+          <img className="absolute -top-10 right-96" src="/img/work-menu/star1.png" alt="" />
+          <img className="absolute top-0 right-72" src="/img/work-menu/star1.png" alt="" />
+          <img className="absolute -top-10 right-52" src="/img/work-menu/star2.png" alt="" />
         </div>
       </div>
     </>

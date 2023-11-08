@@ -2,7 +2,7 @@
   "Portfolio": [
     {
       "id": 1,
-      "img": "./img/work-project/1.png",
+      "img": "/img/work-project/1.png",
       "title": "Specialty Restaurant Group",
       "desc": "Enriched ImmigrationProcess",
       "type1": "UX-UI",
@@ -11,7 +11,7 @@
     },
     {
       "id": 2,
-      "img": "./img/work-project/2.png",
+      "img": "/img/work-project/2.png",
       "title": "Specialty Restaurant Group",
       "desc": "Enriched ImmigrationProcess",
       "type1": "UX-UI",
@@ -20,7 +20,7 @@
     },
     {
       "id": 3,
-      "img": "./img/work-project/3.png",
+      "img": "/img/work-project/3.png",
       "title": "J. Brannam",
       "desc": "Enriched ImmigrationProcess",
       "type1": "UX-UI",
@@ -29,7 +29,7 @@
     },
     {
       "id": 4,
-      "img": "./img/work-project/4.png",
+      "img": "/img/work-project/4.png",
       "title": "Tam's Stationers",
       "desc": "Enriched ImmigrationProcess",
       "type1": "UX-UI",
@@ -38,7 +38,7 @@
     },
     {
       "id": 5,
-      "img": "./img/work-project/5.png",
+      "img": "/img/work-project/5.png",
       "title": "Western Auto",
       "desc": "Enriched ImmigrationProcess",
       "type1": "UX-UI",
@@ -47,7 +47,7 @@
     },
     {
       "id": 6,
-      "img": "./img/work-project/6.png",
+      "img": "/img/work-project/6.png",
       "title": "Pacific Stereo",
       "desc": "Enriched ImmigrationProcess",
       "type1": "UX-UI",
@@ -56,7 +56,7 @@
     },
     {
       "id": 7,
-      "img": "./img/work-project/7.png",
+      "img": "/img/work-project/7.png",
       "title": "Magna Architectural Design",
       "desc": "Enriched ImmigrationProcess",
       "type1": "UX-UI",
@@ -65,7 +65,7 @@
     },
     {
       "id": 8,
-      "img": "./img/work-project/8.png",
+      "img": "/img/work-project/8.png",
       "title": "Cut Rite Lawn Care",
       "desc": "Enriched ImmigrationProcess",
       "type1": "UX-UI",
@@ -98,7 +98,7 @@
   "project": [
     {
       "id": 1,
-      "img": "./img/projects/project1.png",
+      "img": "/img/projects/project1.png",
       "date": "May -July 2017",
       "title": "Grids & Alignment",
       "type": "Mobile, UX, Vivid, Concept",
@@ -106,7 +106,7 @@
     },
     {
       "id": 2,
-      "img": "./img/projects/project2.png",
+      "img": "/img/projects/project2.png",
       "date": "May -July 2017",
       "title": "Grids & Alignment",
       "type": "Mobile, UX, Vivid, Concept",
@@ -114,7 +114,7 @@
     },
     {
       "id": 3,
-      "img": "./img/projects/project3.png",
+      "img": "/img/projects/project3.png",
       "date": "May -July 2017",
       "title": "Grids & Alignment",
       "type": "Mobile, UX, Vivid, Concept",
@@ -122,7 +122,7 @@
     },
     {
       "id": 4,
-      "img": "./img/projects/project4.png",
+      "img": "/img/projects/project4.png",
       "date": "May -July 2017",
       "title": "Grids & Alignment",
       "type": "Mobile, UX, Vivid, Concept",
@@ -130,7 +130,7 @@
     },
     {
       "id": 5,
-      "img": "./img/projects/project5.png",
+      "img": "/img/projects/project5.png",
       "date": "May -July 2017",
       "title": "Grids & Alignment",
       "type": "Mobile, UX, Vivid, Concept",
@@ -138,7 +138,7 @@
     },
     {
       "id": 6,
-      "img": "./img/projects/project6.png",
+      "img": "/img/projects/project6.png",
       "date": "May -July 2017",
       "title": "Grids & Alignment",
       "type": "Mobile, UX, Vivid, Concept",

@@ -8,10 +8,10 @@ export default function Project({img,date,title,type,desc}) {
             <img className="w-full object-none" src={img}/>
         </div>
         <div className="texts p-4">
-            <span className="text-gray-text2 text-sm">{date}</span>
-            <h3 className="text-black-me text-2xl font-inter600">{title}</h3>
-            <h4 className="text-orange-text text-sm">{type}</h4>
-            <p className="text-gray-text2 text-sm ">{desc}</p>
+            <span className="text-gray-text2 text-xs lg:text-sm">{date}</span>
+            <h3 className="text-black-me text-lg lg:text-2xl font-inter600">{title}</h3>
+            <h4 className="text-orange-text text-xs lg:text-sm">{type}</h4>
+            <p className="text-gray-text2 text-xs lg:text-sm ">{desc}</p>
         </div>
       </div>
     </>

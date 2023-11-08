@@ -19,7 +19,7 @@ export default function StartHeader() {
           </div>
         </div>
         <div className="right basis-1/2 mt-3 shrink-0">
-          <img src="./img/startheader/1.png" />
+          <img src="/img/startheader/1.png" />
         </div>
       </div>
     </div>
