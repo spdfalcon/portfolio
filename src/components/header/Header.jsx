@@ -13,7 +13,6 @@ export default function Header() {
   }, []);
   return (
     <>
-      <div className="relative">
         <div className="top flex justify-center gap-2 text-[8px] md:text-sm py-3 bg-gradient-to-r from-gradient-headerA1 via-gradient-headerA2 to-gradient-headerA3">
           <p className="text-gray-text1  font-inter500">
             Get Quick response via contact us on WhatsApp
@@ -23,7 +22,7 @@ export default function Header() {
             +91 84695 47012
           </a>
         </div>
-        <div className="down px-5 container flex items-center justify-between py-5">
+        <div className="z-30 bg-white-me/95  shadow-2xl sticky top-0 down px-5 flex items-center justify-between py-5">
           <div className="left flex gap-10">
             <img className="w-24 sm:w-auto" src={logoipsum} />
             <div className="input hidden lg:flex items-center bg-gradient-headerB2 px-3 rounded-xl ">
@@ -73,8 +72,8 @@ export default function Header() {
             </div>
           </div>
         </div>
-        <div onClick={()=>setIsShow(priv=>!priv)} className={`fixed duration-300 w-full z-10 h-screen bg-gray-400/30 backdrop-blur-md top-0 ring-0 ${isShow ? '' : 'opacity-0 scale-0'} lg:opacity-0 lg:scale-0`}></div>
-        <div className={`fixed top-0 right-0 duration-300 bg-white-me/60 shadow-xl w-1/2 h-screen z-20 p-5 ${isShow ? '' : 'translate-x-full'} lg:translate-x-full`}>
+        <div onClick={()=>setIsShow(priv=>!priv)} className={`fixed duration-300 w-full z-40 h-screen bg-gray-400/30 backdrop-blur-md top-0 ring-0 ${isShow ? '' : 'opacity-0 scale-0'} lg:opacity-0 lg:scale-0`}></div>
+        <div className={`fixed top-0 right-0 duration-300 bg-white-me/60 shadow-xl w-2/3 md:w-1/2 h-screen z-50 p-5 ${isShow ? '' : 'translate-x-full'} lg:translate-x-full`}>
           <div className="right flex flex-col gap-4 text-right text-xs sm:text-sm font-inter500 text-gray-text2">
           <div className="flex ">
             <div
@@ -114,7 +113,6 @@ export default function Header() {
             ))}
           </div>
         </div>
-      </div>
     </>
   );
 }

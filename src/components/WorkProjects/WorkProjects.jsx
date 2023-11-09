@@ -10,11 +10,12 @@ export default function WorkProjects() {
     dispatch(getPortfolios())
   },[])
   return (
-    <div className="container mt-44 flex justify-between flex-wrap gap-y-20">
+    <div className="container mt-44 grid grid-cols-1 lg:grid-cols-2 gap-y-20">
       {
         portfolios.map(item=>(
           <WorkProject
             key={item.id}
+            id={item.id}
             img={item.img}
             title={item.title}
             desc={item.desc}

@@ -1,9 +1,10 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-export default function WorkProject({title , desc , img ,type1 , type2 , type3}) {
+export default function WorkProject({title , desc , img ,type1 , type2 , type3 , id}) {
   return (
-    <div>
-      <div className='flex flex-col'>
+    <div className='flex justify-center'>
+      <Link to={`/work/${id}`} className='flex flex-col w-fit'>
         <div className='img up'>
             <img className='' src={img}/>
         </div>
@@ -20,7 +21,7 @@ export default function WorkProject({title , desc , img ,type1 , type2 , type3})
                 <span>{type3}</span>
             </div>
         </div>
-      </div>
+      </Link>
     </div>
   )
 }
