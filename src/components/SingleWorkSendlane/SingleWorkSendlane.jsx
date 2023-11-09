@@ -13,10 +13,10 @@ export default function SingleWorkSendlane() {
 
             <img className="absolute -top-3 w-full scale-105" src="/img/singlePage/shapeup.png"  />
             <img className="absolute -bottom-3 w-full scale-105" src="/img/singlePage/shapedown.png"  />
-            <img className="" src="/img/singlePage/1.png"  />
-            <img className="" src="/img/singlePage/2.png"  />
-            <img className="" src="/img/singlePage/3.png"  />
-            <img className="" src="/img/singlePage/4.png"  />
+            <img className="" src="/img/singlePage/1.png"/>
+            <img className="" src="/img/singlePage/2.png"/>
+            <img className="" src="/img/singlePage/3.png"/>
+            <img className="" src="/img/singlePage/4.png"/>
         </div>
       </div>
     </div>

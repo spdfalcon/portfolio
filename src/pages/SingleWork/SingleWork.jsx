@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import { getPortfolios } from "../../Redux/store/portfolio";
 import SingleWorkSendlane from "../../components/SingleWorkSendlane/SingleWorkSendlane";
+import SingleWorkProjectBrief from "../../components/SingleWorkProjectBrief/SingleWorkProjectBrief";
 export default function SingleWork() {
   const portfolios = useSelector((store) => store.portfolios);
   const params = Number(useParams().workID);
@@ -19,6 +20,7 @@ export default function SingleWork() {
       <div className="mt-20 container">
         <div className="">
           <SingleWorkSendlane></SingleWorkSendlane>
+          <SingleWorkProjectBrief></SingleWorkProjectBrief>
         </div>
       </div>
     </>
