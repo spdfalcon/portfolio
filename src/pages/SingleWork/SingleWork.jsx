@@ -5,6 +5,7 @@ import { getPortfolios } from "../../Redux/store/portfolio";
 import SingleWorkSendlane from "../../components/SingleWorkSendlane/SingleWorkSendlane";
 import SingleWorkProjectBrief from "../../components/SingleWorkProjectBrief/SingleWorkProjectBrief";
 import SingleWorkProblems from "../../components/SingleWorkProblems/SingleWorkProblems";
+import SingleWorkTheSolution from "../../components/SingleWorkTheSolution/SingleWorkTheSolution";
 export default function SingleWork() {
   const portfolios = useSelector((store) => store.portfolios);
   const params = Number(useParams().workID);
@@ -25,6 +26,9 @@ export default function SingleWork() {
         <SingleWorkProjectBrief></SingleWorkProjectBrief>
         <div className="container">
           <SingleWorkProblems></SingleWorkProblems>
+        </div>
+        <div>
+          <SingleWorkTheSolution></SingleWorkTheSolution>
         </div>
       </div>
     </>
