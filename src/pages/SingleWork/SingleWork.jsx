@@ -6,6 +6,8 @@ import SingleWorkSendlane from "../../components/SingleWorkSendlane/SingleWorkSe
 import SingleWorkProjectBrief from "../../components/SingleWorkProjectBrief/SingleWorkProjectBrief";
 import SingleWorkProblems from "../../components/SingleWorkProblems/SingleWorkProblems";
 import SingleWorkTheSolution from "../../components/SingleWorkTheSolution/SingleWorkTheSolution";
+import SingleWorkTestimonials from "../../components/SingleWorkTestimonials/SingleWorkTestimonials";
+import StartProject from "../../components/StartProject/StartProject";
 export default function SingleWork() {
   const portfolios = useSelector((store) => store.portfolios);
   const params = Number(useParams().workID);
@@ -30,6 +32,10 @@ export default function SingleWork() {
         <div>
           <SingleWorkTheSolution></SingleWorkTheSolution>
         </div>
+        <div className="container">
+          <SingleWorkTestimonials></SingleWorkTestimonials>
+        </div>
+        <StartProject></StartProject>
       </div>
     </>
   );

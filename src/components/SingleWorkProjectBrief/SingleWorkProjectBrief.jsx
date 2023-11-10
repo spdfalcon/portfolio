@@ -1,7 +1,16 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { Link, useParams } from "react-router-dom";
+import { getPortfolios } from "../../Redux/store/portfolio";
 
 export default function SingleWorkProjectBrief() {
+  const portfolios = useSelector((store) => store.portfolios);
+  const params = Number(useParams().workID);
+  const dispatch = useDispatch();
+  const portfolio = portfolios.filter((item) => item.id === params);
+  useEffect(() => {
+    dispatch(getPortfolios());
+  }, []);
   return (
     <>
       <div className="container grid grid-cols-1 lg:grid-cols-2 mt-24 lg:gap-y-20 gap-y-6">
@@ -80,7 +89,9 @@ export default function SingleWorkProjectBrief() {
       </div>
       <div className="py-20 mt-10 flex justify-center bg-[#f4f8ff]">
         <div className="relative">
-          <img className="" src="/img/SingleWorkProjectBrief/1.png" />
+          <img className="" src={
+            portfolio[0] && portfolio[0].img
+          } />
           <img className="hidden xl:block absolute bottom-0 -left-32" src="/img/SingleWorkProjectBrief/women.png" />
           <img className="hidden xl:block absolute bottom-1/2 translate-y-1/2 -right-32" src="/img/SingleWorkProjectBrief/2.png" />
         </div>
