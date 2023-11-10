@@ -1,0 +1,7 @@
+.swiper-pagination-bullet-active-main{
+    background: #A259FF;
+}
+
+.swiper-pagination{
+    transform: translateY(10rem);
+}

@@ -4,50 +4,85 @@ import { Link } from "react-router-dom";
 export default function SingleWorkProjectBrief() {
   return (
     <>
-      <div className="container grid grid-cols-1 lg:grid-cols-2 mt-24 gap-y-20 lg:gap-y-0">
+      <div className="container grid grid-cols-1 lg:grid-cols-2 mt-24 lg:gap-y-20 gap-y-6">
         <div className="left">
-            <div className="top">
-                <Link to={''} className="py-[10px] px-[14px] bg-[#f4f8ff] rounded-md text-sm ">Our Work</Link>
-                <h2 className="mt-5 text-5xl font-inter600">Project Brief</h2>
-                <h4 className="mt-7 text-work-text-gray">Our Roles</h4>
-            </div>
-            <div className="mt-3 down grid grid-cols-2 gap-2 gap-x-40 w-fit text-lg">
-                <h3 className="font-inter600 text-work-text">Branding</h3>
-                <h3 className="font-inter600 text-work-text">UI/UX Design</h3>
-                <h3 className="font-inter600 text-work-text">Web Design</h3>
-                <h3 className="font-inter600 text-work-text">Development</h3>
-            </div>
+          <div className="top">
+            <Link
+              to={""}
+              className="py-[10px] px-[14px] bg-[#f4f8ff] rounded-md text-sm "
+            >
+              Our Work
+            </Link>
+            <h2 className="mt-5 text-3xl lg:text-5xl font-inter600">Project Brief</h2>
+            <h4 className="mt-7 text-work-text-gray text-sm lg:text-base">Our Roles</h4>
+          </div>
+          <div className="mt-3 down grid grid-cols-2 gap-2 gap-x-40 w-fit text-sm lg:text-lg">
+            <h3 className="font-inter600 text-work-text">Branding</h3>
+            <h3 className="font-inter600 text-work-text">UI/UX Design</h3>
+            <h3 className="font-inter600 text-work-text">Web Design</h3>
+            <h3 className="font-inter600 text-work-text">Development</h3>
+          </div>
         </div>
         <div className="lg:flex lg:justify-center">
-        <div className="right max-w-[487px] ">
-            <div className="up text-work-text-gray">
-            <p>Our job is to build your website so that it is functional and user friendly but at the same time attractive. My aim is to bring across your message and identity in the most creative way.</p>
-            <p className="mt-6">I enjoy turning complex problems into simple, beautiful and intuitive interface designs. When I’m not coding or pushing pixels, you’ll find me in the pool or on the court shooting hoops.</p>
+          <div className="right max-w-[487px] ">
+            <div className="up text-work-text-gray text-xs lg:text-base">
+              <p>
+                Our job is to build your website so that it is functional and
+                user friendly but at the same time attractive. My aim is to
+                bring across your message and identity in the most creative way.
+              </p>
+              <p className="mt-6">
+                I enjoy turning complex problems into simple, beautiful and
+                intuitive interface designs. When I’m not coding or pushing
+                pixels, you’ll find me in the pool or on the court shooting
+                hoops.
+              </p>
             </div>
-            <div className="down mt-6 grid grid-cols-2 gap-y-7">
-                <div className="">
-                    <h4 className="text-work-text-gray ">Client</h4>
-                    <h4 className="text-work-text font-inter600 text-lg">Revitalising </h4>
-                </div>
-                <div className="">
-                    <h4 className="text-work-text-gray ">Role</h4>
-                    <h4 className="text-work-text font-inter600 text-lg">Design & Development </h4>
-                </div>
-                <div className="">
-                    <h4 className="text-work-text-gray ">Date</h4>
-                    <h4 className="text-work-text font-inter600 text-lg">June 2020 </h4>
-                </div>
-                <div className="">
-                    <h4 className="text-work-text-gray ">Share</h4>
-                    <div className="text-work-text font-inter600 text-lg flex gap-4">
+            <div className="down mt-6 text-sm lg:text-base  grid grid-cols-2 gap-y-7">
+              <div className="">
+                <h4 className="text-work-text-gray ">Client</h4>
+                <h4 className="text-work-text font-inter600 text-sm lg:text-lg">
+                  Revitalising{" "}
+                </h4>
+              </div>
+              <div className="">
+                <h4 className="text-work-text-gray ">Role</h4>
+                <h4 className="text-work-text font-inter600 text-sm lg:text-lg">
+                  Design & Development{" "}
+                </h4>
+              </div>
+              <div className="">
+                <h4 className="text-work-text-gray ">Date</h4>
+                <h4 className="text-work-text font-inter600 text-sm lg:text-lg">
+                  June 2020{" "}
+                </h4>
+              </div>
+              <div className="">
+                <h4 className="text-work-text-gray ">Share</h4>
+                <div className="text-work-text font-inter600 text-sm lg:text-lg flex gap-4">
+                  <a href="#">
                     <i class="bi bi-linkedin"></i>
+                  </a>
+                  <a href="#">
                     <i class="bi bi-facebook"></i>
+                  </a>
+                  <a href="#">
                     <i class="bi bi-instagram"></i>
+                  </a>
+                  <a href="#">
                     <i class="bi bi-twitter"></i>
-                    </div>
+                  </a>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
+      <div className="py-20 mt-10 flex justify-center bg-[#f4f8ff]">
+        <div className="relative">
+          <img className="" src="/img/SingleWorkProjectBrief/1.png" />
+          <img className="hidden xl:block absolute bottom-0 -left-32" src="/img/SingleWorkProjectBrief/women.png" />
+          <img className="hidden xl:block absolute bottom-1/2 translate-y-1/2 -right-32" src="/img/SingleWorkProjectBrief/2.png" />
         </div>
       </div>
     </>

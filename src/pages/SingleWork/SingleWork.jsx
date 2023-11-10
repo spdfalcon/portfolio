@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import { getPortfolios } from "../../Redux/store/portfolio";
 import SingleWorkSendlane from "../../components/SingleWorkSendlane/SingleWorkSendlane";
 import SingleWorkProjectBrief from "../../components/SingleWorkProjectBrief/SingleWorkProjectBrief";
+import SingleWorkProblems from "../../components/SingleWorkProblems/SingleWorkProblems";
 export default function SingleWork() {
   const portfolios = useSelector((store) => store.portfolios);
   const params = Number(useParams().workID);
@@ -17,10 +18,13 @@ export default function SingleWork() {
   }, []);
   return (
     <>
-      <div className="mt-20 container">
-        <div className="">
+      <div className="mt-20">
+        <div className="container">
           <SingleWorkSendlane></SingleWorkSendlane>
-          <SingleWorkProjectBrief></SingleWorkProjectBrief>
+        </div>
+        <SingleWorkProjectBrief></SingleWorkProjectBrief>
+        <div className="container">
+          <SingleWorkProblems></SingleWorkProblems>
         </div>
       </div>
     </>
