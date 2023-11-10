@@ -5,7 +5,7 @@ export default function AboutmeHeader() {
   return (
     <>
       <div>
-        <div className="top text-center py-12">
+        <div className="top flex flex-col items-center text-center py-12">
           <h1 className="text-3xl lg:text-5xl font-inter600 text-work-text">
             About Me
           </h1>
@@ -16,7 +16,7 @@ export default function AboutmeHeader() {
               development.
             </p>
           </div>
-          <div className="mt-5">
+          <div className="mt-5 cursor-pointer">
           <i class="bi bi-arrow-down"></i>
           </div>
         </div>
