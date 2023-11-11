@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <div className="bg-black-me pt-20 pb-6 px-5 md:px-36 mt-20">
+    <div className="bg-black-me pt-20 pb-6 px-5 md:px-36">
         <div className="container flex flex-col border-b border-b-white-me/60 pb-14">
           <div className="top text-white-me">
             <h2 className="text-lg md:text-[43px] md:leading-10 font-inter800 max-w-[346px]">
