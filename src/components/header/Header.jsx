@@ -43,7 +43,7 @@ export default function Header() {
                 <a
                   key={index}
                   className={
-                    " bg-gray-200 animate-pulse rounded-[10px] px-10 py-3 mx-4"
+                    " bg-slate-200 animate-pulse rounded-[10px] px-10 py-3 mx-4"
                   }
                 >
                   {item.text}

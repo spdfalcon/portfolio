@@ -20,6 +20,9 @@ const slice = createSlice({
         .addCase(getAllProjectFromServer.fulfilled, (state,action)=>{
             return action.payload
         })
+        .addCase(getAllProjectFromServer.pending , ()=>{
+            return 'pending'
+        })
     }
 })
 
