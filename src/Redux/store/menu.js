@@ -10,12 +10,6 @@ export const getMenuFromServer = createAsyncThunk(
 )
 
 
-
-
-
-
-
-
 const slice = createSlice({
     name:'menu',
     initialState:[],
@@ -24,6 +18,12 @@ const slice = createSlice({
         builder
         .addCase(getMenuFromServer.fulfilled , (state , action)=>{
             return action.payload
+        })
+        .addCase(getMenuFromServer.pending , ()=>{
+            return 'pending'
+        })
+        .addCase(getMenuFromServer.rejected , ()=>{
+            return 'rejected'
         })
     }
 })

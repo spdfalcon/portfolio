@@ -57,7 +57,7 @@ export default function FormContactus() {
               <textarea
                 name=""
                 id=""
-                className="w-full outline-none placeholder:text-xs text-xs "
+                className="w-full outline-none placeholder:text-xs text-xs resize-none"
                 placeholder="How can we help you ? Feel free to get in touch!"
               ></textarea>
             </div>
