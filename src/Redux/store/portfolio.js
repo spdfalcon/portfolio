@@ -20,6 +20,13 @@ const slice = createSlice({
         .addCase(getPortfolios.fulfilled , (state , action)=>{
             return action.payload
         })
+        .addCase(getPortfolios.pending , (state , action)=>{
+            return 'pending'
+        })
+        // .addCase(getPortfolios.rejected , (state , action)=>{
+        //     return 'rejected'
+        // })
+
     }
 })
 

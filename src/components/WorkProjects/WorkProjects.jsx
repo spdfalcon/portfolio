@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import WorkProject from "../WorkProject/WorkProject";
 import { useDispatch, useSelector } from "react-redux";
 import { getPortfolios } from "../../Redux/store/portfolio";
+import ProjectPulse from "../ProjectPulse/ProjectPulse";
 
 export default function WorkProjects() {
   const portfolios = useSelector(store=>store.portfolios)
@@ -12,6 +13,14 @@ export default function WorkProjects() {
   return (
     <div className="container mt-44 grid grid-cols-1 lg:grid-cols-2 gap-y-20">
       {
+        portfolios == 'pending' && 
+        Array(8).fill(0).map((item)=>(
+          <ProjectPulse></ProjectPulse>
+        ))
+      }
+      {
+        portfolios !== 'pending'&&
+        portfolios !== 'rejected'&&
         portfolios.map(item=>(
           <WorkProject
             key={item.id}

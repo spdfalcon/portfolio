@@ -2,12 +2,13 @@ import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useParams } from "react-router-dom";
 import { getPortfolios } from "../../Redux/store/portfolio";
+import ProjectPulse from "../ProjectPulse/ProjectPulse";
 
 export default function SingleWorkProjectBrief() {
   const portfolios = useSelector((store) => store.portfolios);
   const params = Number(useParams().workID);
   const dispatch = useDispatch();
-  const portfolio = portfolios.filter((item) => item.id === params);
+  const portfolio = portfolios!== 'pending' && portfolios!=='rejected' ?  portfolios.filter((item) => item.id === params) : '';
   useEffect(() => {
     dispatch(getPortfolios());
   }, []);
@@ -89,9 +90,20 @@ export default function SingleWorkProjectBrief() {
       </div>
       <div className="py-20 mt-10 flex justify-center bg-[#f4f8ff]">
         <div className="relative">
-          <img className="" src={
-            portfolio[0] && portfolio[0].img
-          } />
+          {
+            portfolios == 'pending' &&
+            <div className="w-96">
+              <ProjectPulse></ProjectPulse>
+            </div>
+          }
+          {
+            portfolios !== 'pending' &&
+            portfolios !== 'rejected' &&
+            <img className="" src={
+              portfolio[0] && portfolio[0].img
+            } />
+
+          }
           <img className="hidden xl:block absolute bottom-0 -left-32" src="/img/SingleWorkProjectBrief/women.png" />
           <img className="hidden xl:block absolute bottom-1/2 translate-y-1/2 -right-32" src="/img/SingleWorkProjectBrief/2.png" />
         </div>

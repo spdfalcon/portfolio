@@ -9,16 +9,6 @@ import SingleWorkTheSolution from "../../components/SingleWorkTheSolution/Single
 import SingleWorkTestimonials from "../../components/SingleWorkTestimonials/SingleWorkTestimonials";
 import StartProject from "../../components/StartProject/StartProject";
 export default function SingleWork() {
-  const portfolios = useSelector((store) => store.portfolios);
-  const params = Number(useParams().workID);
-  const dispatch = useDispatch();
-  console.log(portfolios);
-  console.log(params);
-  const portfolio = portfolios.filter((item) => item.id === params);
-  console.log(portfolio);
-  useEffect(() => {
-    dispatch(getPortfolios());
-  }, []);
   return (
     <>
       <div className="mt-20">
