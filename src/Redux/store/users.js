@@ -5,7 +5,8 @@ export const getAllUsers = createAsyncThunk('users/getAllUsers', async () => {
         .then(res => res.data)
 })
 
-export const addUser = createAsyncThunk('users/addUser', async (
+export const addUser = createAsyncThunk(
+    'users/addUser', async (
     {id,
     name,
     email,
@@ -14,7 +15,7 @@ export const addUser = createAsyncThunk('users/addUser', async (
     isAgree,
     subject}
 ) => {
-    return apiRequests.post('/users', {
+    const newUser = {
         id,
         name,
         email,
@@ -22,7 +23,8 @@ export const addUser = createAsyncThunk('users/addUser', async (
         desc,
         isAgree,
         subject
-    })
+    }
+    return apiRequests.post('/users', newUser)
 })
 
 export const removeUser = createAsyncThunk('users/removeUser', async (id) => {
