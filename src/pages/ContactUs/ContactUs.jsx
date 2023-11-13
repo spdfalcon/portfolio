@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from "react";
 import AboutMeQuestion from "../../components/AboutMeQuestion/AboutMeQuestion";
 import FormContactus from "../../components/FormContactus/FormContactus";
+import { useDispatch, useSelector } from "react-redux";
 
 export default function ContactUs() {
   const [IsLoadMap, setIsLoadMap] = useState(false);
+  const dispatch = useDispatch()
+  const users = useSelector(store=>store.users)
   return (
     <>
       <div className="">
@@ -19,6 +22,41 @@ export default function ContactUs() {
         <div className="grid gap-y-10 grid-cols-1 lg:grid-cols-2 container">
           <AboutMeQuestion></AboutMeQuestion>
           <FormContactus></FormContactus>
+        </div>
+        <div className="table1 mt-10">
+        <table className="border text-center container">
+        <thead className="border">
+          <th className="border py-3">ID</th>
+          <th className="border py-3">Name</th>
+          <th className="border py-3">Email</th>
+          <th className="border py-3">phone</th>
+          <th className="border py-3">subject</th>
+          <th className="border py-3">desc</th>
+          <th className="border py-3">isAgree</th>
+        </thead>
+        <tbody className="">
+          {users.length &&
+            users.map((item) => (
+              <tr>
+                <td className="border py-3">{item.id}</td>
+                <td className="border py-3">{item.name}</td>
+                <td className="border py-3">{item.email}</td>
+                <td className="border py-3">{item.phone}</td>
+                <td className="border py-3">{item.subject}</td>
+                <td className="border py-3">{item.desc}</td>
+                <td className="border py-3">
+                  {
+                    item.isAgree ? (
+                      <div>false</div>
+                    ) : (
+                      <div>true</div>
+                    )
+                  }
+                </td>
+              </tr>
+            ))}
+        </tbody>
+      </table>
         </div>
         <div className="mt-20">
           {

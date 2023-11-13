@@ -24,6 +24,7 @@ export default function FormContactus() {
         subject,
       })
     );
+    dispatch(getAllUsers());
   };
   useEffect(() => {
     dispatch(getAllUsers());
@@ -121,7 +122,7 @@ export default function FormContactus() {
           </div>
         </form>
       </div>
-      {users.length && users.map((item) => <div>{item.desc}</div>)}
+      
     </>
   );
 }

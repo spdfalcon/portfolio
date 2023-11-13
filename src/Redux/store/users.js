@@ -25,6 +25,7 @@ export const addUser = createAsyncThunk(
         subject
     }
     return apiRequests.post('/users', newUser)
+    .then(res =>res.data)
 })
 
 export const removeUser = createAsyncThunk('users/removeUser', async (id) => {
@@ -36,14 +37,15 @@ let slice = createSlice({
     initialState: [],
     reducers: {},
     extraReducers: boulder => {
-        boulder.addCase(getAllUsers.fulfilled, (state, action) => {
+        boulder
+        .addCase(getAllUsers.fulfilled, (state, action) => {
             return action.payload
         })
 
 
 
         .addCase(addUser.fulfilled , (state , action)=>{
-            return action.payload
+            
         })
     }
 })
