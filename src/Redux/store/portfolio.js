@@ -1,13 +1,13 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-
+import axios from "axios";
+import apiRequests from "../../Services/Axios/configs";
 
 
 export const getPortfolios = createAsyncThunk(
     'portfolios/getPortfolios' ,
      async ()=>{
-        return fetch('https://portfolio-json-server-vercel.vercel.app/Portfolio')
-        .then(res=>res.json())
-        .then(data=>data)
+        return apiRequests.get('/Portfolio')
+        .then(res=>res.data)
      } )
 
 
