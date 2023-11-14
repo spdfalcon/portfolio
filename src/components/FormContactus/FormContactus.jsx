@@ -29,6 +29,9 @@ export default function FormContactus() {
             if(!/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g.test(values.email)){
               errors.email = 'ایمیل معتبر نیست'
             }
+            if(values.phone === '' || values.phone.length !== 11){
+              errors.phone = 'شماره تماس نا معتبر است'
+            }
 
             return errors
 
@@ -68,7 +71,7 @@ export default function FormContactus() {
                   /> */}
                     <Field
                       id="Name"
-                      className={`outline-none placeholder:text-xs text-xs ${errors.name ? 'text-red-err placeholder:text-red-err' : 'text-green-success'}`} 
+                      className={`outline-none placeholder:text-xs w-full text-xs ${errors.name ? 'text-red-err placeholder:text-red-err' : 'text-green-success'}`} 
                       placeholder="Name"
                       name="name"
                       type="text"
@@ -95,9 +98,9 @@ export default function FormContactus() {
                       type="text"
                     ></Field>
                   </div>
-                  <div className="flex gap-2 border-b-2 px-4 py-2 placeholder:text-work-text-gray text-work-text-gray">
+                  <div className={`flex gap-2 border-b-2 px-4 py-2 placeholder:text-work-text-gray text-work-text-gray ${errors.phone ? 'border-red-err' : 'border-green-success'}`}>
                     <label htmlFor="Name">
-                      <i className="bi bi-telephone"></i>
+                      <i className={`bi bi-telephone ${errors.phone ? 'text-red-err' : 'text-green-success'}`}></i>
                     </label>
                     {/* <input
                       name="phone"
@@ -111,7 +114,7 @@ export default function FormContactus() {
                     <Field
                       name="phone"
                       id="Phone"
-                      className="outline-none placeholder:text-xs text-xs"
+                      className={`outline-none placeholder:text-xs text-xs ${errors.phone ? 'text-red-err placeholder:text-red-err' : 'text-green-success'}`}
                       placeholder="phone"
                       type="text"
                     ></Field>
