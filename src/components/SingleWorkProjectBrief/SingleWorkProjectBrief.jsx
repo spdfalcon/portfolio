@@ -71,16 +71,16 @@ export default function SingleWorkProjectBrief() {
                 <h4 className="text-work-text-gray ">Share</h4>
                 <div className="text-work-text font-inter600 text-sm lg:text-lg flex gap-4">
                   <a href="#">
-                    <i class="bi bi-linkedin"></i>
+                    <i className="bi bi-linkedin"></i>
                   </a>
                   <a href="#">
-                    <i class="bi bi-facebook"></i>
+                    <i className="bi bi-facebook"></i>
                   </a>
                   <a href="#">
-                    <i class="bi bi-instagram"></i>
+                    <i className="bi bi-instagram"></i>
                   </a>
                   <a href="#">
-                    <i class="bi bi-twitter"></i>
+                    <i className="bi bi-twitter"></i>
                   </a>
                 </div>
               </div>

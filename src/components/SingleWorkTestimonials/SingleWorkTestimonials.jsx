@@ -19,7 +19,7 @@ export default function SingleWorkTestimonials() {
             className="py-2 px-5 bg-[#f4f8ff] rounded-[50px] cursor-pointer privEl "
             onClick={() => swiperRef.current.slidePrev()}
           >
-            <i class="bi bi-arrow-left"></i>
+            <i className="bi bi-arrow-left"></i>
           </div>
           <Swiper
             ref={swiperRef}
@@ -44,7 +44,7 @@ export default function SingleWorkTestimonials() {
             className="py-2 px-5 bg-[#f4f8ff] rounded-[50px] cursor-pointer nextEl"
             onClick={() => swiperRef.current.slideNext()}
           >
-            <i class="bi bi-arrow-right"></i>
+            <i className="bi bi-arrow-right"></i>
           </div>
           <div className="absolute -top-8 left-28 z-10">
             <img src="/img/SingleSlider/1.png" alt="" />

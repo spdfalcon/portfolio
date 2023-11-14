@@ -17,7 +17,7 @@ export default function AboutmeHeader() {
             </p>
           </div>
           <div className="mt-5 cursor-pointer">
-          <i class="bi bi-arrow-down"></i>
+          <i className="bi bi-arrow-down"></i>
           </div>
         </div>
         <div className="down grid grid-cols-1 lg:grid-cols-2">
@@ -34,15 +34,15 @@ export default function AboutmeHeader() {
             </p>
             <div className="mt-5 flex flex-col gap-2">
               <div className="flex gap-2">
-                <i class="bi bi-check-circle"></i>
+                <i className="bi bi-check-circle"></i>
                 <h4>Adipiscing eli sed eiusmod</h4>
               </div>
               <div className="flex gap-2">
-                <i class="bi bi-check-circle"></i>
+                <i className="bi bi-check-circle"></i>
                 <h4>Tempor incididunt</h4>
               </div>
               <div className="flex gap-2">
-                <i class="bi bi-check-circle"></i>
+                <i className="bi bi-check-circle"></i>
                 <h4>Labore et dolore magna</h4>
               </div>
               <button className="text-xl px-5 py-4 bg-gradient-to-r from-gradient-boxB1 via-gradient-headerB2 to-gradient-boxB3 w-fit mt-16 rounded-2xl font-inter600 ">🦾 Contact Us</button>

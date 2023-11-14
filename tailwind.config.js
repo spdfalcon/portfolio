@@ -15,6 +15,8 @@ export default {
         'gray-text4': '#ECEEE5',
         'dark1': '#1D1D1D',
         'orange-text': '#F2994A',
+        'red-err' : '#F04438',
+        'green-success' : '#12B76A',
 
 
         'figma-bg': '#F3F6FB',
