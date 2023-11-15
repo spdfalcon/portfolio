@@ -2,7 +2,10 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { addUser, getAllUsers } from "../../Redux/store/users";
 import { Form, Formik, Field } from "formik";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 export default function FormContactus() {
+  const notify = (e) => toast.warn(e);
   const dispatch = useDispatch();
   const users = useSelector((store) => store.users);
   useEffect(() => {
@@ -13,29 +16,32 @@ export default function FormContactus() {
       <div>
         <Formik
           initialValues={{
-            name: "mohammad",
+            name: "",
             email: "",
             phone: "",
             desc: "",
             isAgree: true,
             subject: "subject",
           }}
-          validate={(values)=>{
-            const errors = {}
-            
-            if(values.name === '' || values.name.length < 3 || values.name.length > 20){
-              errors.name = 'اینپوت خالی است'
+          validate={(values) => {
+            const errors = {};
+
+            if (
+              values.name === "" ||
+              values.name.length < 3 ||
+              values.name.length > 20
+            ) {
+              errors.name = "اینپوت خالی است";
             }
-            if(!/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g.test(values.email)){
-              errors.email = 'ایمیل معتبر نیست'
+            if (!/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g.test(values.email)) {
+              errors.email = "ایمیل معتبر نیست";
             }
-            if(values.phone === '' || values.phone.length !== 11){
-              errors.phone = 'شماره تماس نا معتبر است'
+            if (values.phone === "" || values.phone.length !== 11) {
+              errors.phone = "شماره تماس نا معتبر است";
             }
 
-            return errors
-
-          }}  
+            return errors;
+          }}
           onSubmit={(values) => {
             dispatch(
               addUser({
@@ -51,14 +57,22 @@ export default function FormContactus() {
             dispatch(getAllUsers());
           }}
         >
-          {({ values, handleChange, handleSubmit,errors,touched }) => (
-                // <form onSubmit={handleSubmit}>
+          {({ values, handleChange, handleSubmit, errors, touched }) => (
+            // <form onSubmit={handleSubmit}>
             <Form>
               <div className="grid gap-5 grid-cols-1">
                 <div className="grid grid-cols-1 gap-5 md:grid-cols-2 ">
-                  <div className={`flex gap-2 border-b-2 px-4 py-2 placeholder:text-work-text-gray text-work-text-gray ${errors.name ? 'border-red-err' : 'border-green-success'}`}>
-                    <label htmlFor={`Name `} >
-                      <i className={`bi bi-person ${errors.name ? 'text-red-err' : 'text-green-success'}`}></i>
+                  <div
+                    className={`flex gap-2 border-b-2 px-4 py-2 placeholder:text-work-text-gray text-work-text-gray ${
+                      errors.name ? "border-red-err" : "border-green-success"
+                    }`}
+                  >
+                    <label htmlFor={`Name `}>
+                      <i
+                        className={`bi bi-person ${
+                          errors.name ? "text-red-err" : "text-green-success"
+                        }`}
+                      ></i>
                     </label>
                     {/* <input
                     type="text"
@@ -71,15 +85,27 @@ export default function FormContactus() {
                   /> */}
                     <Field
                       id="Name"
-                      className={`outline-none placeholder:text-xs w-full text-xs ${errors.name ? 'text-red-err placeholder:text-red-err' : 'text-green-success'}`} 
+                      className={`outline-none placeholder:text-xs w-full text-xs ${
+                        errors.name
+                          ? "text-red-err placeholder:text-red-err"
+                          : "text-green-success"
+                      }`}
                       placeholder="Name"
                       name="name"
                       type="text"
                     ></Field>
                   </div>
-                  <div className={`flex gap-2 border-b-2 px-4 py-2 placeholder:text-work-text-gray text-work-text-gray ${errors.email ? 'border-red-err' : 'border-green-success'}`}>
+                  <div
+                    className={`flex gap-2 border-b-2 px-4 py-2 placeholder:text-work-text-gray text-work-text-gray ${
+                      errors.email ? "border-red-err" : "border-green-success"
+                    }`}
+                  >
                     <label htmlFor="Name">
-                      <i className={`bi bi-envelope ${errors.email ? 'text-red-err' : 'text-green-success'}`}></i>
+                      <i
+                        className={`bi bi-envelope ${
+                          errors.email ? "text-red-err" : "text-green-success"
+                        }`}
+                      ></i>
                     </label>
                     {/* <input
                       name="email"
@@ -93,14 +119,26 @@ export default function FormContactus() {
                     <Field
                       name="email"
                       id="Email"
-                      className={`outline-none placeholder:text-xs text-xs ${errors.email ? 'text-red-err placeholder:text-red-err' : 'text-green-success'}`}
+                      className={`outline-none placeholder:text-xs text-xs ${
+                        errors.email
+                          ? "text-red-err placeholder:text-red-err"
+                          : "text-green-success"
+                      }`}
                       placeholder="Email address"
                       type="text"
                     ></Field>
                   </div>
-                  <div className={`flex gap-2 border-b-2 px-4 py-2 placeholder:text-work-text-gray text-work-text-gray ${errors.phone ? 'border-red-err' : 'border-green-success'}`}>
+                  <div
+                    className={`flex gap-2 border-b-2 px-4 py-2 placeholder:text-work-text-gray text-work-text-gray ${
+                      errors.phone ? "border-red-err" : "border-green-success"
+                    }`}
+                  >
                     <label htmlFor="Name">
-                      <i className={`bi bi-telephone ${errors.phone ? 'text-red-err' : 'text-green-success'}`}></i>
+                      <i
+                        className={`bi bi-telephone ${
+                          errors.phone ? "text-red-err" : "text-green-success"
+                        }`}
+                      ></i>
                     </label>
                     {/* <input
                       name="phone"
@@ -114,7 +152,11 @@ export default function FormContactus() {
                     <Field
                       name="phone"
                       id="Phone"
-                      className={`outline-none placeholder:text-xs text-xs ${errors.phone ? 'text-red-err placeholder:text-red-err' : 'text-green-success'}`}
+                      className={`outline-none placeholder:text-xs text-xs ${
+                        errors.phone
+                          ? "text-red-err placeholder:text-red-err"
+                          : "text-green-success"
+                      }`}
                       placeholder="phone"
                       type="text"
                     ></Field>
@@ -160,13 +202,12 @@ export default function FormContactus() {
                     placeholder="How can we help you ? Feel free to get in touch!"
                   ></textarea> */}
                   <Field
-                  as='textarea'
+                    as="textarea"
                     name="desc"
                     id=""
                     className="w-full outline-none placeholder:text-xs text-xs resize-none"
                     placeholder="How can we help you ? Feel free to get in touch!"
-                  >
-                  </Field>
+                  ></Field>
                 </div>
                 <div className="flex gap-2 items-center text-work-text-gray col-span-2">
                   {/* <input
@@ -182,19 +223,28 @@ export default function FormContactus() {
                     id="checkbox"
                     className="w-3 h-3 md:w-5 md:h-5 border rounded-sm"
                     type="checkbox"
-                  >
-                  </Field>
+                  ></Field>
                   <label htmlFor="checkbox" className="text-xs md:text-base">
                     I agree that my data is collected and stored
                   </label>
                 </div>
-                <button
-                  // onClick={submitHandler}
-                  type="submit"
-                  className="text-xs md:text-base mt-5 px-6 py-3 bg-black-me text-white-me rounded-lg w-fit"
-                >
-                  🤙 Get In Touch
-                </button>
+                <div>
+                  <button
+                    onClick={() => {
+                      if (errors.email || errors.name || errors.phone) {
+                        notify(`Enter your name & phone & gmail`)
+                      }
+                    }}
+                    type="submit"
+                    className="text-xs md:text-base mt-5 px-6 py-3 bg-black-me text-white-me rounded-lg w-fit"
+                  >
+                    🤙 Get In Touch
+                  </button>
+                  <ToastContainer
+                  theme="dark"
+                  position="top-left"
+                  />
+                </div>
               </div>
               {/* </form> */}
             </Form>
