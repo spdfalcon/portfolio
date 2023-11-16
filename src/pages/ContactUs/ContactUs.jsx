@@ -23,7 +23,7 @@ export default function ContactUs() {
           <AboutMeQuestion></AboutMeQuestion>
           <FormContactus></FormContactus>
         </div>
-        <div className="table1 mt-10">
+        {/* <div className="table1 mt-10">
           <table className="border text-center container">
             <thead className="border">
               <tr>
@@ -53,7 +53,7 @@ export default function ContactUs() {
                 ))}
             </tbody>
           </table>
-        </div>
+        </div> */}
         <div className="mt-20">
           {!IsLoadMap && (
             <div className="w-full lg:h-96 bg-gray-300 rounded-xl animate-pulse"></div>

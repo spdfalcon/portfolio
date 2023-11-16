@@ -8,7 +8,10 @@ export default function SingleWorkProjectBrief() {
   const portfolios = useSelector((store) => store.portfolios);
   const params = Number(useParams().workID);
   const dispatch = useDispatch();
-  const portfolio = portfolios!== 'pending' && portfolios!=='rejected' ?  portfolios.filter((item) => item.id === params) : '';
+  const portfolio =
+    portfolios !== "pending" && portfolios !== "rejected"
+      ? portfolios.filter((item) => item.id === params)
+      : "";
   useEffect(() => {
     dispatch(getPortfolios());
   }, []);
@@ -23,8 +26,12 @@ export default function SingleWorkProjectBrief() {
             >
               Our Work
             </Link>
-            <h2 className="mt-5 text-3xl lg:text-5xl font-inter600">Project Brief</h2>
-            <h4 className="mt-7 text-work-text-gray text-sm lg:text-base">Our Roles</h4>
+            <h2 className="mt-5 text-3xl lg:text-5xl font-inter600">
+              Project Brief
+            </h2>
+            <h4 className="mt-7 text-work-text-gray text-sm lg:text-base">
+              Our Roles
+            </h4>
           </div>
           <div className="mt-3 down grid grid-cols-2 gap-2 gap-x-40 w-fit text-sm lg:text-lg">
             <h3 className="font-inter600 text-work-text">Branding</h3>
@@ -70,17 +77,23 @@ export default function SingleWorkProjectBrief() {
               <div className="">
                 <h4 className="text-work-text-gray ">Share</h4>
                 <div className="text-work-text font-inter600 text-sm lg:text-lg flex gap-4">
-                  <a href="#">
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/in/%D9%85%D8%AD%D9%85%D8%AF%D8%B1%D8%B6%D8%A7-%DA%AF%D9%88%D8%AF%D8%B1%D8%B2%DB%8C-b77646264?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                  >
                     <i className="bi bi-linkedin"></i>
                   </a>
-                  <a href="#">
-                    <i className="bi bi-facebook"></i>
+                  <a target="_blank" href="https://github.com/spdfalcon">
+                    <i className="bi bi-github"></i>
                   </a>
-                  <a href="#">
+                  <a
+                    target="_blank"
+                    href="https://www.instagram.com/spd.mohammadreza/?next=%2F"
+                  >
                     <i className="bi bi-instagram"></i>
                   </a>
-                  <a href="#">
-                    <i className="bi bi-twitter"></i>
+                  <a target="_blank" href="https://t.me/spdmohammadreza">
+                    <i className="bi bi-telegram"></i>
                   </a>
                 </div>
               </div>
@@ -90,22 +103,22 @@ export default function SingleWorkProjectBrief() {
       </div>
       <div className="py-20 mt-10 flex justify-center bg-[#f4f8ff]">
         <div className="relative">
-          {
-            portfolios == 'pending' &&
+          {portfolios == "pending" && (
             <div className="w-96">
               <ProjectPulse></ProjectPulse>
             </div>
-          }
-          {
-            portfolios !== 'pending' &&
-            portfolios !== 'rejected' &&
-            <img className="" src={
-              portfolio[0] && portfolio[0].img
-            } />
-
-          }
-          <img className="hidden xl:block absolute bottom-0 -left-32" src="/img/SingleWorkProjectBrief/women.png" />
-          <img className="hidden xl:block absolute bottom-1/2 translate-y-1/2 -right-32" src="/img/SingleWorkProjectBrief/2.png" />
+          )}
+          {portfolios !== "pending" && portfolios !== "rejected" && (
+            <img className="" src={portfolio[0] && portfolio[0].img} />
+          )}
+          <img
+            className="hidden xl:block absolute bottom-0 -left-32"
+            src="/img/SingleWorkProjectBrief/women.png"
+          />
+          <img
+            className="hidden xl:block absolute bottom-1/2 translate-y-1/2 -right-32"
+            src="/img/SingleWorkProjectBrief/2.png"
+          />
         </div>
       </div>
     </>

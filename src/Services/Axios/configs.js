@@ -1,6 +1,6 @@
 import axios from "axios";
 const apiRequests = axios.create({
-    baseURL:'http://localhost:3000',
+    baseURL:'https://portfolio-json-server-vercel.vercel.app/',
     headers: {
         'Content-Type' : 'application/json',
     }

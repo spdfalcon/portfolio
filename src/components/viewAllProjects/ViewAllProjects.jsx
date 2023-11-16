@@ -23,15 +23,15 @@ export default function ViewAllProjects() {
             </div>
           </div>
           <div className="right basis-1/2">
-            <p className="text-gray-text2">
+            <p className="text-xs md:text-base text-gray-text2">
               Adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
               Wiusmod tempor incididunt.Adipiscing elit, sed do eiusmod tempor
               incididunt ut labore et dolore magna aliqua.
             </p>
             <div className="mt-5">
-              <h2 className="text-[26px] font-inter600">UX/UI Design</h2>
-              <div className="text-[26px] text-gray-text3">
+              <h2 className=" md:text-[26px] font-inter600">UX/UI Design</h2>
+              <div className=" md:text-[26px] text-gray-text3">
                 <h4>Branding</h4>
                 <h4>Development</h4>
                 <h4>Marketing</h4>

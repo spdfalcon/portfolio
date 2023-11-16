@@ -1,5 +1,6 @@
 import React from "react";
 import CounterHome from "../CounterHome/CounterHome";
+import { Link } from "react-router-dom";
 
 export default function AboutmeHeader() {
   return (
@@ -45,7 +46,7 @@ export default function AboutmeHeader() {
                 <i className="bi bi-check-circle"></i>
                 <h4>Labore et dolore magna</h4>
               </div>
-              <button className="text-xl px-5 py-4 bg-gradient-to-r from-gradient-boxB1 via-gradient-headerB2 to-gradient-boxB3 w-fit mt-16 rounded-2xl font-inter600 ">🦾 Contact Us</button>
+              <Link to={'/contact-us'} className="text-xl px-5 py-4 bg-gradient-to-r from-gradient-boxB1 via-gradient-headerB2 to-gradient-boxB3 w-fit mt-16 rounded-2xl font-inter600 ">🦾 Contact Us</Link>
             </div>
           </div>
         </div>

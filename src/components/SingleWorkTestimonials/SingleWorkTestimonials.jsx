@@ -46,7 +46,7 @@ export default function SingleWorkTestimonials() {
           >
             <i className="bi bi-arrow-right"></i>
           </div>
-          <div className="absolute -top-8 left-28 z-10">
+          <div className="absolute -top-8 left-28 z-10 hidden md:block">
             <img src="/img/SingleSlider/1.png" alt="" />
           </div>
         </div>

@@ -23,7 +23,7 @@ export default function AboutMeQuestion() {
             <i className="bi bi-envelope"></i>
             </div>
             <div className="right text-xs lg:text-base max-w-[328px]">
-                <h4>kiritgoti007@gmail.com</h4>
+                <h4>spd.mohammadreza@gmail.com</h4>
             </div>
           </div>
           <div className="flex gap-5 items-center">

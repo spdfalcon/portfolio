@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function StartHeader() {
   return (
@@ -13,9 +14,9 @@ export default function StartHeader() {
               Kirit Goti is a designer focused on building brands and creating
               digital experiences — currently working at TechHive
             </p>
-            <button className=" bg-dark1 mt-3 rounded-md text-white-me px-2 py-1 text-xs lg:px-6 lg:py-3 ">
+            <Link to={'/contact-us'} className=" bg-dark1 mt-3 rounded-md text-white-me px-2 py-2 text-[8px] sm:text-xs  lg:px-6 lg:py-3 inline-block">
               Let’s Get Started
-            </button>
+            </Link>
           </div>
         </div>
         <div className="right basis-1/2 mt-3 shrink-0">

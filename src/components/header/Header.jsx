@@ -18,8 +18,8 @@ export default function Header() {
           Get Quick response via contact us on WhatsApp
         </p>
         <i className="bi bi-whatsapp"></i>
-        <a className="font-inter600" href="#">
-          +91 84695 47012
+        <a className="font-inter600" href="tel:+989029974092">
+          +98 9029974092
         </a>
       </div>
       <div className="z-30 bg-white-me/95  shadow-2xl sticky top-0 down px-5 flex items-center justify-between py-5">
