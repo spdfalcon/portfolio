@@ -8,7 +8,9 @@ import SingleWorkProblems from "../../components/SingleWorkProblems/SingleWorkPr
 import SingleWorkTheSolution from "../../components/SingleWorkTheSolution/SingleWorkTheSolution";
 import SingleWorkTestimonials from "../../components/SingleWorkTestimonials/SingleWorkTestimonials";
 import StartProject from "../../components/StartProject/StartProject";
+import userScroll from "../../hooks/useScroll";
 export default function SingleWork() {
+  userScroll()
   return (
     <>
       <div className="mt-20">

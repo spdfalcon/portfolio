@@ -2,8 +2,10 @@ import React, { useEffect, useState } from "react";
 import AboutMeQuestion from "../../components/AboutMeQuestion/AboutMeQuestion";
 import FormContactus from "../../components/FormContactus/FormContactus";
 import { useDispatch, useSelector } from "react-redux";
+import userScroll from "../../hooks/useScroll";
 
 export default function ContactUs() {
+  userScroll()
   const [IsLoadMap, setIsLoadMap] = useState(false);
   const dispatch = useDispatch();
   const users = useSelector((store) => store.users);

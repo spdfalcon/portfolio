@@ -4,8 +4,10 @@ import TeamPic from "../../components/TeamPic/TeamPic";
 import SingleWorkSlider from "../../components/SingleWorkSlider/SingleWorkSlider";
 import SingleWorkTestimonials from "../../components/SingleWorkTestimonials/SingleWorkTestimonials";
 import StartProject from "../../components/StartProject/StartProject";
+import userScroll from "../../hooks/useScroll";
 
 export default function AboutMe() {
+  userScroll()
   return (
     <div>
       <div className="container">

@@ -5,7 +5,9 @@ import ViewAllProjects from '../../components/viewAllProjects/ViewAllProjects'
 import TeamPic from '../../components/TeamPic/TeamPic'
 import StartProject from '../../components/StartProject/StartProject'
 import Fworks from '../../components/Fworks/Fworks'
+import userScroll from '../../hooks/useScroll'
 export default function Home() {
+  userScroll()
   return (
     <div className=''>
       <StartHeader></StartHeader>
