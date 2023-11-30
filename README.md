@@ -62,7 +62,7 @@ _Follow the steps below to install and run._
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/rezaeiar/personal-portfolio.git
+   git clone https://github.com/spdfalcon/portfolio.git
    ```
 2. Go to the path of the added project
    ```sh
