@@ -28,7 +28,7 @@
 ## About The Project
 
 This is a portfolio project with a lot of attractive features and the use of functional libraries such as Redux and Axios!
-[Project Deployed Link - View the project](https://personal-portfolio-kappa-flax.vercel.app/)
+[Project Deployed Link - View the project](https://portfolio-two-gamma-56.vercel.app/)
 
 Project features:
 * Fully responsive
